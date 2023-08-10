@@ -1,5 +1,13 @@
-var div = document.querySelector("div")
+function saludar(e) {
+e.stopPropagation()
+alert('Hola!')
+}
 
-div.addEventListener("click", ()=>{
-    alert("Hola! Soy el div")
+
+var div = document.querySelector("div")
+div.addEventListener("click", (event)=> {
+    event.stopPropagation();
+    alert("Hola! Soy el div");
+    
 });
+
