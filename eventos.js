@@ -1,5 +1,5 @@
-function saludar(event) {
-event.stopPropagation()
+function saludar(e) {
+e.stopPropagation()
 alert('Hola!')
 }
 
